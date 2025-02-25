@@ -1,6 +1,6 @@
 export default function helper(req, res) {
     if(req.method == 'GET') {
-        res.status(200).json({message: "Fteching all users"})
+        res.status(200).json({message: "Fetching all users"})
     } else if(req.method == 'POST') {
         const {name} = req.body;
         res.status(201).json({massage: `User ${name} created!`})
